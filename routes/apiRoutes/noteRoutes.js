@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const fs = require("fs");
+const path = require("path");
 let database = require("../db/db.json");
 
 router.get("/notes", (req, res) => {
-  database = JSON.parse(fs.readFileSync("..db/db.json"));
+  database = JSON.parse(fs.readFileSync(".db/db.json, utf-8"));
   res.json(database);
 });
 
