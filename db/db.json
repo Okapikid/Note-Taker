@@ -1,6 +1,8 @@
-[
+{
+  "notes": [
     {
-        "title":"Test Title",
-        "text":"Test text"
+      "title": "Take a note to leave a note",
+      "text": "Save your notes here, but please remember to come visit them lest they get lonely"
     }
-]
+  ]
+}
