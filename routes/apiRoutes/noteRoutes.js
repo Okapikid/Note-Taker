@@ -1,7 +1,9 @@
+// Constants to enable routes
 const router = require("express").Router();
 const { notes } = require("../../db/db");
 const { newNote } = require("../../lib/functions");
 
+// Information for toures
 router.get("/notes", (req, res) => {
   let notepad = notes;
   res.json(notepad);
@@ -13,4 +15,5 @@ router.post("/notes", (req, res) => {
   res.json(note);
 });
 
+// Export
 module.exports = router;
